@@ -7,5 +7,6 @@
 
 <p>run docker container</p>
 <pre><code>docker run --name flask_web-app -p 5000:5000 flask_web</code></pre>
+<p>Local server: http://0.0.0.0:5000/</p>
 
 <p>Link to example: https://www.fullstackpython.com/blog/develop-flask-web-apps-docker-containers-macos.html</p>
