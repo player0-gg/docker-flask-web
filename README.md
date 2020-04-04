@@ -28,16 +28,16 @@
 
 <h2>Kubernetes</h2>
 
-<p>Deployments</p>
+<p>Deployment using config file deployment.yaml</p>
 <pre><code>kubectl apply -f deployment.yaml</code></pre>
 
 <p>Cleaning up the deployment, the replica set, and the pods that are running the flask-web application</p>
-<pre><code>kubectl delete deployment flask-web-deployment</code></pre>
+<pre><code>kubectl delete deployment flask-web</code></pre>
+
+<p>Expose a service using config file services.yaml</p>
+<pre><code>kubectl apply -f services.yaml</code></pre>
 
 <h3>Useful commands</h3>
-<p>Expose a service</p>
-<pre><code></code></pre>
-
 <p>Check deployments:</p>
 <pre><code>kubectl get deployments</code></pre>
 
@@ -52,5 +52,7 @@
 
 <h3>Links</h3>
 <p>Kubernetes with Docker on Mac: https://rominirani.com/tutorial-getting-started-with-kubernetes-with-docker-on-mac-7f58467203fd</p>
+<p>Creating a service for an application running: https://kubernetes.io/docs/tutorials/stateless-application/expose-external-ip-address/</p>
+<p>Connecting applications with services: https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/</p>
 
 <p>Kubernetes cheatsheet: https://kubernetes.io/docs/reference/kubectl/cheatsheet/</p>
