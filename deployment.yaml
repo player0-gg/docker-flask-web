@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-web-deployment
+spec:
+  selector:
+    matchLabels:
+      app: flask-web
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: flask-web
+    spec:
+      containers:
+      - name: flask-web
+        image: docker.io/player0gg/flask-web:1.0
+        ports:
+        - containerPort: 80
