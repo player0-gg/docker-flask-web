@@ -14,4 +14,4 @@
 
 
 <p>Link to example: https://www.fullstackpython.com/blog/develop-flask-web-apps-docker-containers-macos.html</p>
-<p>Info to latest: https://vsupalov.com/docker-latest-tag/</p>
+<p>Info about latest: https://vsupalov.com/docker-latest-tag/</p>
