@@ -31,11 +31,8 @@
 <p>Deployment using config file deployment.yaml</p>
 <pre><code>kubectl apply -f deployment.yaml</code></pre>
 
-<p>Cleaning up the deployment, the replica set, and the pods that are running the flask-web application</p>
-<pre><code>kubectl delete deployment flask-web</code></pre>
-
-<p>Expose a service using config file services.yaml</p>
-<pre><code>kubectl apply -f services.yaml</code></pre>
+<p>Cleaning up the deployment, the replica set, and the pods that are running the flask-web application & the service</p>
+<pre><code>kubectl delete deployment flask-web && kubectl delete svc flask-web</code></pre>
 
 <h3>Useful commands</h3>
 <p>Check deployments:</p>
